@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.wrap {
+    width: 100%;
+    max-width: 1200px; /* Adjusted max-width for better control */
+    padding: 20px;
+    margin: 0 auto;
+}
+#calendar {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.header button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+.header h2 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+.calendar-grid {
+    display: flex;
+}
+#week-numbers {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr); /* FIXED: Changed from 7 to 6 rows to match the calendar layout */
+    width: 50px; /* Fixed width for week numbers */
+    margin-right: 5px;
+    flex-shrink: 0; /* Prevent the week numbers column from shrinking */
+}
+#week-numbers div {
+    height: 100px; /* Consistent height with calendar cells */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.weekdays, #days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.weekdays div, #days .day-cell {
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+#days .day-cell {
+    background: #f9f9f9;
+    height: 100px; /* Fixed height */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.weekdays div {
+    background: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    height: 50px; /* Fixed height for weekday headers */
+}
+.day-number {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+#days .day-cell div:not(.day-number) {
+    font-size: 0.8em;
+    overflow: hidden;
+    white-space: break;
+}
+.prev-month .day-number,
+.next-month .day-number {
+    color: #ccc;
+}
+.prev-month div:not(.day-number),
+.next-month div:not(.day-number) {
+    color: #ccc;
+    font-style: italic;
+}
+.holiday {
+    background: #ffddc1;
+}
+.moon-phase {
+      color: #6079d5 !important;
+}
+
+/* Make all text in moon phase cells white */
+.moon-phase div {
+
+}
+
+/* Style for previous/next month moon phases */
+.prev-month.moon-phase div,
+.next-month.moon-phase div {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+#month-summary {
+    margin-top: 20px;
+    font-size: 1em;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .wrap {
+        padding: 10px;
+    }
+    .header button {
+        padding: 5px;
+        font-size: 0.8em;
+    }
+    .weekdays div, #days .day-cell, #week-numbers div {
+        padding: 2px;
+    }
+    #days .day-cell, #week-numbers div {
+        height: 60px;
+    }
+    #week-numbers {
+        width: 40px;
+    }
+    .day-number {
+        font-size: 0.9em;
+    }
+}
