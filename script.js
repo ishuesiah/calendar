@@ -203,15 +203,8 @@ function generateHolidays(year) {
 function generateMoonPhases(year) {
     const moonPhases = {};
     
-    // We'll use a more accurate algorithm based on astronomical calculations
-    // This is based on Jean Meeus' algorithms from "Astronomical Algorithms"
-    
-    // Define moon phase names
-    const phases = ['New Moon', 'First Quarter Moon', 'Full Moon', 'Third Quarter Moon'];
-    
-    // Updated moon phase data for 2026 (based on astronomical calculations)
+    // Updated moon phase data for 2026 based on Griffith Observatory data
     if (year === 2026) {
-if (year === 2026) {
         // January 2026 - these appear to be correct already
         moonPhases["2026-01-03"] = "Full Moon";
         moonPhases["2026-01-10"] = "Third Quarter Moon";
@@ -297,7 +290,6 @@ if (year === 2026) {
     
     return moonPhases;
 }
-
 /**
  * Convert UTC time to PST/PDT with proper timezone adjustment
  * Accounts for Daylight Saving Time
