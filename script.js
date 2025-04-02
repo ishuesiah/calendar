@@ -211,82 +211,83 @@ function generateMoonPhases(year) {
     
     // Updated moon phase data for 2026 (based on astronomical calculations)
     if (year === 2026) {
-        // January 2026
+if (year === 2026) {
+        // January 2026 - these appear to be correct already
         moonPhases["2026-01-03"] = "Full Moon";
         moonPhases["2026-01-10"] = "Third Quarter Moon";
         moonPhases["2026-01-18"] = "New Moon";
         moonPhases["2026-01-25"] = "First Quarter Moon";
         
-        // February 2026
+        // February 2026 - these appear to be correct already
         moonPhases["2026-02-01"] = "Full Moon";
         moonPhases["2026-02-09"] = "Third Quarter Moon";
         moonPhases["2026-02-17"] = "New Moon";
         moonPhases["2026-02-24"] = "First Quarter Moon";
         
-        // March 2026
+        // March 2026 - these appear to be correct already
         moonPhases["2026-03-03"] = "Full Moon";
         moonPhases["2026-03-10"] = "Third Quarter Moon";
         moonPhases["2026-03-18"] = "New Moon";
         moonPhases["2026-03-25"] = "First Quarter Moon";
         
-        // April 2026
+        // April 2026 - these appear to be correct already
         moonPhases["2026-04-01"] = "Full Moon";
         moonPhases["2026-04-09"] = "Third Quarter Moon";
         moonPhases["2026-04-17"] = "New Moon";
         moonPhases["2026-04-23"] = "First Quarter Moon";
         
-        // May 2026
+        // May 2026 - these appear to be correct already
         moonPhases["2026-05-01"] = "Full Moon";
         moonPhases["2026-05-08"] = "Third Quarter Moon";
         moonPhases["2026-05-16"] = "New Moon";
         moonPhases["2026-05-23"] = "First Quarter Moon";
         moonPhases["2026-05-30"] = "Full Moon";
         
-        // June 2026
+        // June 2026 - these appear to be correct already
         moonPhases["2026-06-06"] = "Third Quarter Moon";
         moonPhases["2026-06-14"] = "New Moon";
         moonPhases["2026-06-21"] = "First Quarter Moon";
         moonPhases["2026-06-29"] = "Full Moon";
         
-        // July 2026
-        moonPhases["2026-07-06"] = "Third Quarter Moon";
-        moonPhases["2026-07-14"] = "New Moon";
-        moonPhases["2026-07-21"] = "First Quarter Moon";
-        moonPhases["2026-07-28"] = "Full Moon";
+        // July 2026 - CORRECTED
+        moonPhases["2026-07-07"] = "Third Quarter Moon"; // Changed from 6 to 7
+        moonPhases["2026-07-14"] = "New Moon";           // This is correct
+        moonPhases["2026-07-21"] = "First Quarter Moon"; // This is correct
+        moonPhases["2026-07-29"] = "Full Moon";          // Changed from 28 to 29
         
-        // August 2026
-        moonPhases["2026-08-04"] = "Third Quarter Moon";
-        moonPhases["2026-08-12"] = "New Moon";
-        moonPhases["2026-08-19"] = "First Quarter Moon";
-        moonPhases["2026-08-26"] = "Full Moon";
+        // August 2026 - CORRECTED
+        moonPhases["2026-08-05"] = "Third Quarter Moon"; // Changed from 4 to 5
+        moonPhases["2026-08-12"] = "New Moon";           // This is correct
+        moonPhases["2026-08-19"] = "First Quarter Moon"; // This is correct
+        moonPhases["2026-08-27"] = "Full Moon";          // Changed from 26 to 27
         
-        // September 2026
-        moonPhases["2026-09-03"] = "Third Quarter Moon";
-        moonPhases["2026-09-11"] = "New Moon";
-        moonPhases["2026-09-18"] = "First Quarter Moon";
-        moonPhases["2026-09-25"] = "Full Moon";
+        // September 2026 - CORRECTED
+        moonPhases["2026-09-04"] = "Third Quarter Moon"; // Changed from 3 to 4
+        moonPhases["2026-09-10"] = "New Moon";           // Changed from 11 to 10
+        moonPhases["2026-09-18"] = "First Quarter Moon"; // This is correct
+        moonPhases["2026-09-26"] = "Full Moon";          // Changed from 25 to 26
         
-        // October 2026
-        moonPhases["2026-10-03"] = "Third Quarter Moon";
-        moonPhases["2026-10-10"] = "New Moon";
-        moonPhases["2026-10-17"] = "First Quarter Moon";
-        moonPhases["2026-10-24"] = "Full Moon";
+        // October 2026 - CORRECTED
+        moonPhases["2026-10-03"] = "Third Quarter Moon"; // This is correct
+        moonPhases["2026-10-10"] = "New Moon";           // This is correct
+        moonPhases["2026-10-18"] = "First Quarter Moon"; // Changed from 17 to 18
+        moonPhases["2026-10-25"] = "Full Moon";          // Changed from 24 to 25
         
-        // November 2026
-        moonPhases["2026-11-01"] = "Third Quarter Moon";
-        moonPhases["2026-11-09"] = "New Moon";
-        moonPhases["2026-11-16"] = "First Quarter Moon";
-        moonPhases["2026-11-23"] = "Full Moon";
-        moonPhases["2026-11-30"] = "Third Quarter Moon";
+        // November 2026 - CORRECTED
+        moonPhases["2026-11-01"] = "Third Quarter Moon"; // This is correct
+        moonPhases["2026-11-08"] = "New Moon";           // Changed from 9 to 8
+        moonPhases["2026-11-17"] = "First Quarter Moon"; // Changed from 16 to 17
+        moonPhases["2026-11-24"] = "Full Moon";          // Changed from 23 to 24
+        moonPhases["2026-11-30"] = "Third Quarter Moon"; // This is correct
         
-        // December 2026
-        moonPhases["2026-12-08"] = "New Moon";
-        moonPhases["2026-12-15"] = "First Quarter Moon";
-        moonPhases["2026-12-22"] = "Full Moon";
-        moonPhases["2026-12-29"] = "Third Quarter Moon";
+        // December 2026 - CORRECTED
+        moonPhases["2026-12-08"] = "New Moon";           // This is correct
+        moonPhases["2026-12-16"] = "First Quarter Moon"; // Changed from 15 to 16
+        moonPhases["2026-12-23"] = "Full Moon";          // Changed from 22 to 23
+        moonPhases["2026-12-30"] = "Third Quarter Moon"; // Changed from 29 to 30
     }
     
-    // December 2025 moon phases
+    // December 2025 moon phases - keeping as is since you didn't mention issues with these
     if (year === 2025) {
         moonPhases["2025-12-04"] = "New Moon"; 
         moonPhases["2025-12-11"] = "First Quarter Moon";
