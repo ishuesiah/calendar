@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="calendar">
+            <div class="header">
+                <button id="prev">&lt;</button>
+                <h2 id="month-year"></h2>
+                <button id="next">&gt;</button>
+                <button id="toggle-start-day">Toggle Start Day</button>
+                <button id="copy-dates">Copy Dates</button>
+                <button id="copy-weeks">Copy Weeks</button>
+            </div>
+            <div class="calendar-grid">
+                <div id="week-numbers">
+                    <!-- Week numbers will be dynamically rendered -->
+                </div>
+                <div>
+                    <div class="weekdays" id="weekdays">
+                        <!-- Weekdays will be dynamically rendered -->
+                    </div>
+                    <div id="days"></div>
+                </div>
+            </div>
+            <div id="month-summary">
+                <!-- Monthly summary will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
