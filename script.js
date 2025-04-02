@@ -219,7 +219,7 @@ function generateMoonPhases(year) {
         
         // March 2026 - these appear to be correct already
         moonPhases["2026-03-03"] = "Full Moon";
-        moonPhases["2026-03-10"] = "Third Quarter Moon";
+        moonPhases["2026-03-11"] = "Third Quarter Moon";
         moonPhases["2026-03-18"] = "New Moon";
         moonPhases["2026-03-25"] = "First Quarter Moon";
         
@@ -231,13 +231,13 @@ function generateMoonPhases(year) {
         
         // May 2026 - these appear to be correct already
         moonPhases["2026-05-01"] = "Full Moon";
-        moonPhases["2026-05-08"] = "Third Quarter Moon";
+        moonPhases["2026-05-09"] = "Third Quarter Moon";
         moonPhases["2026-05-16"] = "New Moon";
         moonPhases["2026-05-23"] = "First Quarter Moon";
-        moonPhases["2026-05-30"] = "Full Moon";
+        moonPhases["2026-05-31"] = "Full Moon";
         
         // June 2026 - these appear to be correct already
-        moonPhases["2026-06-06"] = "Third Quarter Moon";
+        moonPhases["2026-06-08"] = "Third Quarter Moon";
         moonPhases["2026-06-14"] = "New Moon";
         moonPhases["2026-06-21"] = "First Quarter Moon";
         moonPhases["2026-06-29"] = "Full Moon";
